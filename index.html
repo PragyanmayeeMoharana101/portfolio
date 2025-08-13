@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="script.js">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/my_pic.jpeg" alt="Richard hanrick" width="80" border-radius="50 px">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Pragyanmayee Moharana</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="#" class="contact-link">pragyanmayeemoharana101@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 7008315865</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2006-09-14">September 14, 2006</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Waghodia, Vadodara, Gujarat</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <!-- <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav> -->
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a first-year B.Tech student at Parul University in Vadodara, specialising in HTML, CSS, React.js, and backend development with Node.js. I work with both MongoDB and SQL databases to create efficient, dynamic, and scalable solutions for the web. My focus is on building seamless functionality paired with clean, visually engaging interfaces.
+          </p>
+
+          <p>
+            I enjoy developing websites and applications, including e-commerce platforms, food delivery apps, and other interactive digital experiences. My passion lies in transforming ideas into fully functional products that are intuitive, user-friendly, and impactful.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/ui-design.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/wev_dev.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - projects
+        -->
+
+        <section class="projects">
+
+          <h3 class="h3 projects-title">projects</h3>
+
+          <ul class="projects-list has-scrollbar">
+
+            <li class="projects-item">
+              <div class="content-card" data-projects-item>
+
+                <figure class="projects-avatar-box">
+                  <img src="./assets/cara.png" alt="cara-ecomm-proj" width="100" data-projects-avatar>
+                </figure>
+
+                <h4 class="h4 projects-item-title" data-projects-title>CARA - E-Commerce Frontend Application (React.js)</h4>
+
+                <div class="projects-text" data-projects-text>
+                  <p>
+                    CARA is an e-commerce frontend project built with React.js, demonstrating my skills in creating scalable, user-friendly web applications. It includes product listings, add-to-cart functionality, and dynamic UI updates using React state and props. I focused on clean code, reusability, and responsive design with CSS. Though not live, CARA highlights my ability to build intuitive interfaces and handle key e-commerce features while improving my problem-solving in UI logic and user interactions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="projects-item">
+              <div class="content-card" data-projects-item>
+
+                <figure class="projects-avatar-box">
+                  <img src="./assets/food_app.png" alt="Jessica miller" width="60" data-projects-avatar>
+                </figure>
+
+                <h4 class="h4 projects-item-title" data-projects-title>Food Delivery Frontend Application (React.js)</h4>
+
+                <div class="projects-text" data-projects-text>
+                  <p>
+                    This project is a frontend prototype for a food delivery web app built with React.js, HTML, and CSS. It lets users browse food items, add them to a cart, and go through a smooth checkout process. I used React Router for navigation, managed state with useState and useContext, and designed interactive UI components to improve user experience. Through this project, I gained practical experience in building scalable, component-based applications and strengthened my understanding of modern frontend development.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="projects-item">
+              <div class="content-card" data-projects-item>
+
+                <figure class="projects-avatar-box">
+                  <img src="./assets/portfolio2.png" alt="Emily evans" width="60" data-projects-avatar>
+                </figure>
+
+                <h4 class="h4 projects-item-title" data-projects-title>Personal Portfolio Website - Built with html and css </h4>
+
+                <div class="projects-text" data-projects-text>
+                  <p>
+                    This is my personal portfolio website, built with html and css to showcase my projects, skills, and experience as a developer. It features reusable components and this project highlights my frontend skills
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="projects-item">
+              <div class="content-card" data-projects-item>
+
+                <figure class="projects-avatar-box">
+                  <img src="./assets/portfolio.png" alt="Henry william" width="60" data-projects-avatar>
+                </figure>
+
+                <h4 class="h4 projects-item-title" data-projects-title>Personal Portfolio Website - Built with React.js</h4>
+
+                <div class="projects-text" data-projects-text>
+                  <p>
+                    This is my personal portfolio website, built with React.js to showcase my projects, skills, and experience as a developer. It features reusable components, smooth navigation with React Router, and a clean, responsive design using custom CSS. The site includes sections like About, Projects, Skills, and Contact, along with links to GitHub and LinkedIn. This project highlights my frontend skills, focus on UI/UX, and ability to build professional applications while using modern React workflows and Git for version control.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Skills</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/html.png" alt="skill logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/css.png" alt="skill logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/js.png" alt="skill logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/mongodb.png" alt="skill logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/react.png" alt="skill logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/express.png" alt="skill logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/node-js.png" alt="skill logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      
+
+
+
+
+      
+      
+
+
+       
+
+       
+
+     
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
